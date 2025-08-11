@@ -1,0 +1,66 @@
+/*main*/
+.shoes-row {
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.shoes-col {
+    padding-left: 4px;
+    padding-right: 4px;
+    width: calc(100% / 12 * 6);
+}
+@media (max-width: 767px) {
+    .shoes-row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .shoes-col {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+}
+
+
+.shoes-color {
+    width: 64px;
+}
+.size-btn {
+    width: 160px;
+}
+.size-btn.active, .size-btn:hover {
+    border: 1px solid $neutral-900;
+}
+.shop-btn, .collect-btn {
+    width: 50%;
+}
+.collect-btn:hover {
+    background-color: $neutral-900;
+    color: $neutral-white;
+}
+@media (max-width: 576px) {
+    .shop-btn {
+        width: 84%;
+    }
+    .collect-btn {
+        width: 13.7%;
+    }
+    .bi-heart {
+    font-size: 24px;
+}
+}
+.shoes-information {
+    border-bottom: 1px solid $neutral-300;
+}
+
+@media (max-width:767px) {
+    .like-m-row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .like-m-col {
+        min-width: 300px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

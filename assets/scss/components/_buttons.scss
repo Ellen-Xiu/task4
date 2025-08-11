@@ -1,0 +1,37 @@
+/*button setting*/
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer; /*游標連結改手指圖示*/
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    line-height: 1.5;
+}
+@media (max-width: 767px) {
+    .btn {
+        padding: 8px 16px;
+    }
+}
+.btn-neutral {
+    background-color: $neutral-900;
+    color: $neutral-white;
+}
+.btn-neutral:hover {
+    background-color: $neutral-700;
+}
+.btn-primary-300 {
+    background-color: $primary-300;
+    color: $neutral-900;
+}
+.btn-primary-300:hover {
+    color: $primary-500;
+}
+.btn-outline {
+    border: 1px solid $neutral-300;
+}
+@media (max-width: 576px) {
+    .btn-s-none {
+        border: none;
+    }
+}

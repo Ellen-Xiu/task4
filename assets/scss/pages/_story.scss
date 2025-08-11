@@ -1,0 +1,73 @@
+/*header部分*/
+.header {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 151px 0px;
+}
+@media (max-width: 767px) {
+    .header {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true);
+        padding: 87px 0px;
+    }
+}
+.header h1 {
+    color: $neutral-white;
+    text-align: center;  
+}
+.header h2 {
+    color: $neutral-white;
+    text-align: center;
+}
+
+
+/*中間內容*/
+.blockquote {
+    background-color: $primary-100;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .blockquote {
+        text-align: left;
+        padding: 24px;
+    }
+}
+
+
+/* 品牌歷程 */
+.history ol {
+    padding-left: 24px;
+}
+.history li {
+    list-style-type: disc;
+}
+.history-line {
+    border-left: 1px solid $neutral-900;
+    padding-left: 8px;
+}
+
+
+/* 品牌理念 */
+.ideal-line {
+    border-left: 3px solid $neutral-300;
+    padding-left: 12px;
+}
+
+
+/* 品牌小故事 */
+.story a {
+    display: block;
+}
+.bi-arrow-up-right {
+    padding-right: 8px;
+    color: $primary-400;
+}
+.story-border-line {
+    border-bottom: 1px solid $primary-400;
+}
+@media (max-width: 767px) {
+    .story {
+        justify-content: flex-start;
+    }   
+}

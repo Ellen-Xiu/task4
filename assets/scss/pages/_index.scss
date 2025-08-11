@@ -1,0 +1,155 @@
+.shoes-list {
+  width: 50%;
+  background-color: $primary-200;
+}
+.story {
+  width: 50%;
+  background-color: $primary-100;
+}
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 289px;
+  padding-bottom: 288px;
+  h1 {
+    margin-left: 200px;
+  }
+  h4 {
+    margin-left: 200px;
+  }
+  .btn {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+    padding-top: 155px;
+    padding-bottom: 155px;
+    h1 {
+      margin-left: 24px;
+    }
+    h4 {
+      margin-left: 24px;
+    }
+    .btn {
+      margin-left: 24px;
+    }
+  }
+}
+
+
+.hot-items {
+  position: relative;
+  .hot-tag {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 8px 12px;
+    background-color: $primary-100;
+  }
+}
+
+@media (max-width: 767px) {
+  .hot-m-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .hot-m-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+
+.co-branded {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  position: relative;
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    right: 68%;
+  }
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    left: 64.6%;
+  }
+}
+@media (max-width: 767px) {
+  .co-branded{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true);
+    padding: 64px 0px;
+    overflow: hidden;
+    .star-img {
+      top: 32px;
+    }
+    .sparkle-img {
+      bottom: 104px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .co-branded{
+    .star-img {
+      right: 92.5%;
+    }
+    .sparkle-img {
+      left: 87.2%;
+    }
+  }
+}
+
+
+.series-category{
+  position: relative;
+  .series-text {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(#000000, 0.4);
+  }
+}
+
+
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+.inspiration-col-4 {
+  padding: 4px;
+  width: calc(100% / 12 * 4);
+}
+.inspiration-col-6 {
+  padding: 4px;
+  width: calc(100% / 12 * 6);
+}
+.inspiration-col-12 {
+  padding: 4px;
+  width: calc(100%);
+}
+@media (max-width: 767px) {
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0px -8px;
+    img {
+      min-width: 300px;
+    }
+  }
+  .inspiration-col-4, .inspiration-col-6, .inspiration-col-12 {
+    width: unset;/* 清除電腦版的欄寬設定 */
+    padding: 0px 8px;
+  }
+}
