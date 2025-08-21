@@ -56,7 +56,7 @@
 
 
 /* 品牌小故事 */
-.story a {
+.story-list a {
     display: block;
 }
 .bi-arrow-up-right {
@@ -67,7 +67,7 @@
     border-bottom: 1px solid $primary-400;
 }
 @media (max-width: 767px) {
-    .story {
+    .story-list {
         justify-content: flex-start;
     }   
 }

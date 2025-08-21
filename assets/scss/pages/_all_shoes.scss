@@ -1,6 +1,7 @@
 /*pagination*/
 .page-item button {
-    padding: 8px 15px;
+    width: 40px;
+    /* padding: 8px 15px; */
     border-radius: 0px;
     font-weight: 400;
 }
@@ -11,4 +12,7 @@
 .page-item :active {
     background-color: $primary-300;
     font-weight: 500;
+}
+.bi {
+    width: 20px;
 }

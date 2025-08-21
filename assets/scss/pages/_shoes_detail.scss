@@ -28,7 +28,7 @@
 .size-btn {
     width: 160px;
 }
-.size-btn.active, .size-btn:hover {
+.size-btn.active, .instock:hover {
     border: 1px solid $neutral-900;
 }
 .shop-btn, .collect-btn {
@@ -37,6 +37,9 @@
 .collect-btn:hover {
     background-color: $neutral-900;
     color: $neutral-white;
+}
+.bi {
+    font-size: 20px;
 }
 @media (max-width: 576px) {
     .shop-btn {
@@ -63,4 +66,7 @@
         padding-left: 8px;
         padding-right: 8px;
     }
+}
+.btn:disabled {
+    cursor: not-allowed;
 }
